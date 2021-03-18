@@ -103,13 +103,15 @@
             <version>4.5.3</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.taobao.auto</groupId>-->
-<!--            <artifactId>taobao-sdk-auto</artifactId>-->
-<!--            <version>0.0.1</version>-->
-<!--            <scope>system</scope>-->
-<!--            <systemPath>${project.basedir}/src/main/resources/taobao-sdk-java.jar</systemPath>-->
-<!--        </dependency>-->
+        <!-- 此包修改自 https://github.com/shinyke/Time-NLP/ author: shinyke -->
+        <dependency>
+            <groupId>com.time</groupId>
+            <artifactId>nlp</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/Time-NLP-1.0.0.jar</systemPath>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -142,7 +144,7 @@
     </dependencyManagement>
 
     <build>
-        <finalName>alibaba</finalName>
+        <finalName>nlp</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
