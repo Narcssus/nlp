@@ -34,6 +34,8 @@ public class TimeNlpServiceImpl implements TimeNlpService {
             JSONObject object = new JSONObject();
             object.put("timeExpression", unit1.Time_Expression);
             object.put("time", DateUtil.formatDateDefault(unit1.getTime()));
+            object.put("isCron", unit1.isCron);
+            object.put("cron", unit1.cron);
             timeList.add(object);
         }
         res.put("timeList", timeList);
