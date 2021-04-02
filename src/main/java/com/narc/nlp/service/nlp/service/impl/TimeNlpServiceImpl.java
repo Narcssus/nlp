@@ -24,7 +24,7 @@ public class TimeNlpServiceImpl implements TimeNlpService {
     @Override
     public JSONObject doTimeNlp(String str) {
         TimeNormalizer normalizer = new TimeNormalizer();
-        normalizer.setPreferFuture(true);
+        normalizer.setPreferFuture(false);
         String timeBase = DateUtil.formatDate(new Date(), "yyyy-MM-dd-HH-mm-ss");
         normalizer.parse(str, timeBase);
         TimeUnit[] unit = normalizer.getTimeUnit();
